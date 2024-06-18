@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="foodpanda@localhost [2]">
+  <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.51">
+    <root id="1"/>
+    <database id="2" parent="1" name="foodpanda">
+      <Current>1</Current>
+      <Grants>11||10|C|G
+11||-9223372036854775808|U|G
+11||10|U|G
+2200||6171|C|G
+2200||-9223372036854775808|U|G
+2200||6171|U|G
+14697||10|C|G
+14697||-9223372036854775808|U|G
+14697||10|U|G</Grants>
+      <IntrospectionStateNumber>769</IntrospectionStateNumber>
+      <ObjectId>24576</ObjectId>
+      <OwnerName>postgres</OwnerName>
+    </database>
+    <database id="3" parent="1" name="postgres">
+      <Comment>default administrative connection database</Comment>
+      <ObjectId>5</ObjectId>
+      <OwnerName>postgres</OwnerName>
+    </database>
+    <role id="4" parent="1" name="pg_checkpoint">
+      <ObjectId>4544</ObjectId>
+    </role>
+    <role id="5" parent="1" name="pg_create_subscription">
+      <ObjectId>6304</ObjectId>
+    </role>
+    <role id="6" parent="1" name="pg_database_owner">
+      <ObjectId>6171</ObjectId>
+    </role>
+    <role id="7" parent="1" name="pg_execute_server_program">
+      <ObjectId>4571</ObjectId>
+    </role>
+    <role id="8" parent="1" name="pg_monitor">
+      <ObjectId>3373</ObjectId>
+      <RoleGrants>3374
+3375
+3377</RoleGrants>
+    </role>
+    <role id="9" parent="1" name="pg_read_all_data">
+      <ObjectId>6181</ObjectId>
+    </role>
+    <role id="10" parent="1" name="pg_read_all_settings">
+      <ObjectId>3374</ObjectId>
+    </role>
+    <role id="11" parent="1" name="pg_read_all_stats">
+      <ObjectId>3375</ObjectId>
+    </role>
+    <role id="12" parent="1" name="pg_read_server_files">
+      <ObjectId>4569</ObjectId>
+    </role>
+    <role id="13" parent="1" name="pg_signal_backend">
+      <ObjectId>4200</ObjectId>
+    </role>
+    <role id="14" parent="1" name="pg_stat_scan_tables">
+      <ObjectId>3377</ObjectId>
+    </role>
+    <role id="15" parent="1" name="pg_use_reserved_connections">
+      <ObjectId>4550</ObjectId>
+    </role>
+    <role id="16" parent="1" name="pg_write_all_data">
+      <ObjectId>6182</ObjectId>
+    </role>
+    <role id="17" parent="1" name="pg_write_server_files">
+      <ObjectId>4570</ObjectId>
+    </role>
+    <role id="18" parent="1" name="postgres">
+      <BypassRls>1</BypassRls>
+      <CanLogin>1</CanLogin>
+      <CreateDb>1</CreateDb>
+      <CreateRole>1</CreateRole>
+      <ObjectId>10</ObjectId>
+      <Replication>1</Replication>
+      <SuperRole>1</SuperRole>
+    </role>
+    <tablespace id="19" parent="1" name="pg_default">
+      <ObjectId>1663</ObjectId>
+      <StateNumber>1</StateNumber>
+      <OwnerName>postgres</OwnerName>
+    </tablespace>
+    <tablespace id="20" parent="1" name="pg_global">
+      <ObjectId>1664</ObjectId>
+      <StateNumber>1</StateNumber>
+      <OwnerName>postgres</OwnerName>
+    </tablespace>
+    <schema id="21" parent="2" name="information_schema">
+      <ObjectId>14697</ObjectId>
+      <StateNumber>530</StateNumber>
+      <OwnerName>postgres</OwnerName>
+    </schema>
+    <schema id="22" parent="2" name="pg_catalog">
+      <Comment>system catalog schema</Comment>
+      <ObjectId>11</ObjectId>
+      <StateNumber>524</StateNumber>
+      <OwnerName>postgres</OwnerName>
+    </schema>
+    <schema id="23" parent="2" name="public">
+      <Comment>standard public schema</Comment>
+      <Current>1</Current>
+      <IntrospectionStateNumber>769</IntrospectionStateNumber>
+      <LastIntrospectionLocalTimestamp>2024-06-18.12:30:31</LastIntrospectionLocalTimestamp>
+      <ObjectId>2200</ObjectId>
+      <StateNumber>524</StateNumber>
+      <OwnerName>pg_database_owner</OwnerName>
+    </schema>
+    <sequence id="24" parent="23" name="customer_id_seq">
+      <DasType>integer|0s</DasType>
+      <ObjectId>24577</ObjectId>
+      <SequenceIdentity>1</SequenceIdentity>
+      <StartValue>1</StartValue>
+      <StateNumber>748</StateNumber>
+      <OwnerName>postgres</OwnerName>
+    </sequence>
+    <sequence id="25" parent="23" name="order_id_seq">
+      <DasType>integer|0s</DasType>
+      <ObjectId>24593</ObjectId>
+      <SequenceIdentity>1</SequenceIdentity>
+      <StartValue>1</StartValue>
+      <StateNumber>752</StateNumber>
+      <OwnerName>postgres</OwnerName>
+    </sequence>
+    <sequence id="26" parent="23" name="product_id_seq">
+      <DasType>integer|0s</DasType>
+      <ObjectId>24585</ObjectId>
+      <SequenceIdentity>1</SequenceIdentity>
+      <StartValue>1</StartValue>
+      <StateNumber>750</StateNumber>
+      <OwnerName>postgres</OwnerName>
+    </sequence>
+    <table id="27" parent="23" name="customer">
+      <ObjectId>24578</ObjectId>
+      <StateNumber>752</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <table id="28" parent="23" name="order">
+      <ObjectId>24594</ObjectId>
+      <StateNumber>752</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <table id="29" parent="23" name="product">
+      <ObjectId>24586</ObjectId>
+      <StateNumber>754</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <table id="30" parent="23" name="product_order">
+      <ObjectId>24606</ObjectId>
+      <StateNumber>754</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <column id="31" parent="27" name="id">
+      <DasType>integer|0s</DasType>
+      <IdentityKind>by-default</IdentityKind>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>748</StateNumber>
+      <SequenceId>24577</SequenceId>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="32" parent="27" name="name">
+      <DasType>varchar|0s</DasType>
+      <Position>2</Position>
+      <StateNumber>748</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="33" parent="27" name="email">
+      <DasType>varchar|0s</DasType>
+      <Position>3</Position>
+      <StateNumber>748</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="34" parent="27" name="password">
+      <DasType>varchar|0s</DasType>
+      <Position>4</Position>
+      <StateNumber>748</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="35" parent="27" name="is_deleted">
+      <DasType>boolean|0s</DasType>
+      <Position>5</Position>
+      <StateNumber>748</StateNumber>
+      <TypeId>16</TypeId>
+    </column>
+    <column id="36" parent="27" name="created_date">
+      <DasType>date|0s</DasType>
+      <Position>6</Position>
+      <StateNumber>748</StateNumber>
+      <TypeId>1082</TypeId>
+    </column>
+    <index id="37" parent="27" name="customer_pk">
+      <ColNames>id</ColNames>
+      <ObjectId>24583</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>748</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="38" parent="27" name="customer_pk">
+      <ObjectId>24584</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>748</StateNumber>
+      <UnderlyingIndexId>24583</UnderlyingIndexId>
+    </key>
+    <column id="39" parent="28" name="id">
+      <DasType>integer|0s</DasType>
+      <IdentityKind>by-default</IdentityKind>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>752</StateNumber>
+      <SequenceId>24593</SequenceId>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="40" parent="28" name="order_name">
+      <DasType>varchar|0s</DasType>
+      <Position>2</Position>
+      <StateNumber>752</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="41" parent="28" name="order_description">
+      <DasType>integer|0s</DasType>
+      <Position>3</Position>
+      <StateNumber>752</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="42" parent="28" name="cus_id">
+      <DasType>integer|0s</DasType>
+      <Position>4</Position>
+      <StateNumber>752</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="43" parent="28" name="ordered_at">
+      <DasType>date|0s</DasType>
+      <Position>5</Position>
+      <StateNumber>752</StateNumber>
+      <TypeId>1082</TypeId>
+    </column>
+    <foreign-key id="44" parent="28" name="order_customer_id_fk">
+      <ColNames>cus_id</ColNames>
+      <ObjectId>24601</ObjectId>
+      <StateNumber>752</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
+      <RefTableId>24578</RefTableId>
+    </foreign-key>
+    <index id="45" parent="28" name="order_pk">
+      <ColNames>id</ColNames>
+      <ObjectId>24599</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>752</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="46" parent="28" name="order_pk">
+      <ObjectId>24600</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>752</StateNumber>
+      <UnderlyingIndexId>24599</UnderlyingIndexId>
+    </key>
+    <column id="47" parent="29" name="id">
+      <DasType>integer|0s</DasType>
+      <IdentityKind>by-default</IdentityKind>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>750</StateNumber>
+      <SequenceId>24585</SequenceId>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="48" parent="29" name="product_name">
+      <DasType>varchar|0s</DasType>
+      <Position>2</Position>
+      <StateNumber>750</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="49" parent="29" name="product_code">
+      <DasType>varchar|0s</DasType>
+      <Position>3</Position>
+      <StateNumber>750</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="50" parent="29" name="is_deleted">
+      <DasType>boolean|0s</DasType>
+      <Position>4</Position>
+      <StateNumber>750</StateNumber>
+      <TypeId>16</TypeId>
+    </column>
+    <column id="51" parent="29" name="imported_at">
+      <DasType>date|0s</DasType>
+      <Position>5</Position>
+      <StateNumber>750</StateNumber>
+      <TypeId>1082</TypeId>
+    </column>
+    <column id="52" parent="29" name="expired_at">
+      <DasType>date|0s</DasType>
+      <Position>6</Position>
+      <StateNumber>750</StateNumber>
+      <TypeId>1082</TypeId>
+    </column>
+    <column id="53" parent="29" name="product_description">
+      <DasType>varchar|0s</DasType>
+      <Position>7</Position>
+      <StateNumber>750</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="54" parent="29" name="product_pk">
+      <ColNames>id</ColNames>
+      <ObjectId>24591</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>750</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="55" parent="29" name="product_pk">
+      <ObjectId>24592</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>750</StateNumber>
+      <UnderlyingIndexId>24591</UnderlyingIndexId>
+    </key>
+    <column id="56" parent="30" name="pro_id">
+      <DasType>integer|0s</DasType>
+      <Position>1</Position>
+      <StateNumber>754</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="57" parent="30" name="order_id">
+      <DasType>integer|0s</DasType>
+      <Position>2</Position>
+      <StateNumber>754</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <foreign-key id="58" parent="30" name="product_order_product_id_fk">
+      <ColNames>pro_id</ColNames>
+      <ObjectId>24609</ObjectId>
+      <StateNumber>754</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
+      <RefTableId>24586</RefTableId>
+    </foreign-key>
+    <foreign-key id="59" parent="30" name="product_order_order_id_fk">
+      <ColNames>order_id</ColNames>
+      <ObjectId>24614</ObjectId>
+      <StateNumber>754</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
+      <RefTableId>24594</RefTableId>
+    </foreign-key>
+  </database-model>
+</dataSource>
